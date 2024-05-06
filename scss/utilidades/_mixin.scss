@@ -1,0 +1,11 @@
+//mixin sin parametros
+@mixin border{
+    border: 1px solid black;
+    margin: 50px;
+}
+@mixin img{
+    width: 100%;
+    padding: 2% 10% 1% 10%
+}
+
+//mixin con parametros

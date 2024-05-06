@@ -11,12 +11,29 @@
 </head>
 <body>
     <header>
-        <nav class="back-home">
-            <a href="../index.html">Volver al inicio</a>
-            <h1 class="h1-sobre-mi">Sobre mi</h1>
-        </nav>
+        <div class="header-porfolio">
+            <!-- logo de la pagina -->
+            <div class="logo-principal">
+                <img src="../img/Lucia.jpg" alt="logo de la pagina">
+            </div>
+            <!-- menu de navegacion con bt -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a> <a href="../index.html">Inicio</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./porfolio.html">Porfolio</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./servicio.html">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+          </div> 
     </header>
     <main>
+        <h1 class="h1-sobre-mi">
+            Sobre mi
+        </h1>
         <div>
             <ul class="list-group">
                 <li class="list-group-item">Datos sobre la persona</li>
@@ -30,10 +47,16 @@
     </main>
     <section>
         <div class="container-text">
-            <p class="grid-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni commodi, nemo dolore amet est eaque natus nulla laudantium voluptas totam. Impedit tempore inventore earum ratione unde molestias debitis eaque.</p>
-            <p class="grid-text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quae molestias aliquam eos officiis ipsum voluptates a! Sequi ratione veniam labore repellat. Maxime natus laudantium modi incidunt qui. Rerum, id!</p>
-            <p class="grid-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quibusdam numquam velit cumque sit autem quos temporibus voluptatibus nesciunt illo, repellendus quam quae repellat? A, repudiandae? Id accusantium sit aut.</p>
-        </div>
+            <div class="grid-text1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni commodi, nemo dolore amet est eaque natus nulla laudantium voluptas totam. Impedit tempore inventore earum ratione unde molestias debitis eaque.</p>
+            </div>
+            <div class="grid-text2">
+            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore quae molestias aliquam eos officiis ipsum voluptates a! Sequi ratione veniam labore repellat. Maxime natus laudantium modi incidunt qui. Rerum, id!</p>
+            </div>
+            <div class="grid-text3">
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quibusdam numquam velit cumque sit autem quos temporibus voluptatibus nesciunt illo, repellendus quam quae repellat? A, repudiandae? Id accusantium sit aut.</p>
+            </div>
+        </div>    
         <nav >
             <div class="sobre-mi">
                 <a href="contacto.html">Trabaja Conmigo</a>

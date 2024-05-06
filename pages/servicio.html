@@ -11,14 +11,29 @@
 </head>
 <body>
     <header>
-        <nav class="back-home">
-            <a href="../index.html">Volver al inicio</a>
-        </nav>
-        <h1 class="h1">
-            Servicios
-        </h1>
+        <div class="header-porfolio">
+            <!-- logo de la pagina -->
+            <div class="logo-principal">
+                <img src="../img/Lucia.jpg" alt="logo de la pagina">
+            </div>
+            <!-- menu de navegacion con bt -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"></a> <a href="../index.html">Inicio</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./porfolio.html">Porfolio</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./sobremi.html">Sobre mi</a></li>
+                  <li><a class="dropdown-item" href="#"></a> <a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+          </div> 
     </header>
     <main>
+        <h1>
+            Servicios
+        </h1>
         <div class="border-one">
             <h2>
                 Identidad de marca
@@ -49,54 +64,52 @@
             Como trabajo
         </h3>
         <!-- imagenes de ejemplo del trabajo -->
-        <div class="grid-container-servicio">
-            <img src="../img/celular.jpg" alt="contacto">
-            <img src="../img/arrow right.jpg" alt="siguiente paso">
-            <div>     
-                <p class="alert alert-primary" role="alert">
-                    Contacto
-                </p>
-                <p>
-                    Aplica a un cupo rellenando el formulario del contacto
-                </p>
-        </div>    
-        </div>
-        <div class="grid-container-servicio">
-            <img src="../img/semilla.jpeg" alt="comienzo del trabajo">
-            <img src="../img/arrow right.jpg" alt="siguiente paso">
-            <div>    
-                <p class="alert alert-primary" role="alert">
-                    Inicio y investigacion
-                </p>
-                <p>
-                    Nos reunimos en una videollamada inicial y conversamos del proyecto
-                </p>
+        <div class="container-padre">
+            <div class="grid-servicio1">
+                <img src="../img/celular.jpg" alt="contacto">
+                <div>     
+                    <p>
+                        Contacto
+                    </p>
+                    <p>
+                        Aplica a un cupo rellenando el formulario del contacto
+                    </p>    
             </div>    
-        </div>    
-        <div class="grid-container-servicio">
-            <img src="../img/lupa.jpg" alt="estrategia de diseños">
-            <img src="../img/arrow right.jpg" alt="siguiente paso">
-            <div>     
-                <p class="alert alert-primary" role="alert">
-                    Estrategia y diseño
-                </p>
-                <p>
-                    Se realiza un proceso de investigacion que permite realizar diseños personalizados
-                </p>
+            </div>
+            <div class="grid-servicio2">
+                <img src="../img/semilla.jpeg" alt="comienzo del trabajo">
+                <div>    
+                    <p>
+                        Inicio y investigacion
+                    </p>
+                    <p>
+                        Nos reunimos en una videollamada inicial y conversamos del proyecto
+                    </p>
+                </div>    
             </div>    
-        </div>
-        <div class="grid-container-servicio">
-            <img src="../img/arbol.jpg" alt="estrategia de diseños">
-            <img src="../img/arrow right.jpg" alt="siguiente paso">
-            <div> 
-                <p class="alert alert-primary" role="alert">
-                   Entrega
-                </p>
-                <p>
-                    Una vez que se haya aprobado la propuesta final, se envian los archivos 
-                </p>
-            </div>    
-        </div>  
+            <div class="grid-servicio3">
+                <img src="../img/lupa.jpg" alt="estrategia de diseños">
+                <div>     
+                    <p>
+                        Estrategia y diseño
+                    </p>
+                    <p>
+                        Se realiza un proceso de investigacion que permite realizar diseños personalizados
+                    </p>   
+                </div>    
+            </div>
+            <div class="grid-servicio4">
+                <img src="../img/arbol.jpg" alt="estrategia de diseños">
+                <div> 
+                    <p>
+                    Entrega
+                    </p>
+                    <p>
+                        Una vez que se haya aprobado la propuesta final, se envian los archivos 
+                    </p>
+                </div>    
+            </div>
+        </div>      
     </section>
     <footer>
         <!-- logo de la pagina -->

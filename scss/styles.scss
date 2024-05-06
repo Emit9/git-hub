@@ -1,0 +1,250 @@
+//import
+@import "./utilidades/variables";
+@import "./utilidades/mixin";
+
+/*reset*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* estilo mobile */
+
+/* menu de navegacion */
+.header-index{
+    display: flex;
+    align-items: center;
+    position: static;
+    width: 100%;
+    background-color:$color-principal;
+    justify-content: space-between;    
+    img{
+        width: 16%;
+    }
+}
+/* main de index */
+main{
+    .main-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h1{
+        text-align: center;
+        margin: 5%;
+    }
+    p{
+        text-align: center;
+        margin: 5% 3%; 
+    }
+}
+/* section de index */
+section{
+    .ver-mas-index{
+        text-align: center;
+    }
+    .grid-container{
+        object-fit: cover;
+        display: grid;
+        gap: 30px;
+        grid-template-rows: repeat(3 1fr);
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    .grid-img{
+        width: 80%;
+    }
+    .grid-img3{
+        width: 80%;
+    }
+}
+/* footer */ 
+footer{
+    border-top: 0.01px solid black;
+    img{
+        width: 7vh;
+    }
+    nav{
+        text-align: right;
+        list-style-type: none;
+    }
+    p{
+        text-align: center;
+        margin-top: 0%;
+    }
+}
+
+/* porfolio */
+header{
+    .header-porfolio{
+        display: flex;
+        align-items: center;
+        position: static;
+        width: 100%;
+        background-color:$color-principal;
+        justify-content: space-between;    
+        img{
+            width: 16%;
+        } 
+    }
+}
+main{
+    .h1-porfolio{
+        margin-top: 0%;
+    }
+    h2{
+        text-align: center;
+        margin: 5%;
+    }
+}
+/* servicios */
+main{
+    .border-one{
+        @include border;
+    }
+    .border-two{
+        @include border;
+    }
+    .border-three{
+        @include border;
+    }
+} 
+section{
+    h3{
+        text-align: center;
+    }
+    .grid-servicio1 img{
+        @include img;
+    }
+    .grid-servicio2 img{
+        @include img;
+    }
+    .grid-servicio3 img{
+        @include img;
+    }
+    .grid-servicio4 img{
+        @include img;
+    }
+    .grid-servicio1{
+        text-align: center;
+    }
+    .grid-servicio2{
+        text-align: center;
+    }
+    .grid-servicio3{
+        text-align: center;
+    }
+    .grid-servicio4{
+        text-align: center;
+    }
+} 
+/* sobre mi */ 
+main{
+    .h1-sobre-mi{
+        text-align: start;
+    }
+    .list-group{
+        display: inline-block;
+        margin: 5% 0% 5% 70%;
+    }
+    .img-sobre-mi{
+        width: 70%;
+        margin-left: 15%;
+    }          
+}
+section{
+    .container-text{
+        display: grid;
+        gap: 3%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin: 7%;
+    }
+    nav{
+        .sobre-mi{
+            text-align: center;
+            background-color: $color-secundario;
+            padding: 15%;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+    } 
+}
+/* Contacto */
+main{ 
+margin: 7%;   
+    .bt-contacto{
+        padding: 3% 10% 10% 10%; 
+    }         
+} 
+/* estilo de tablet */
+
+@media screen and (min-width: 600px) {
+section{
+    .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    .grid-img3{
+        grid-column: span 2;
+    }
+    }
+}
+section{
+    .container-padre{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }  
+}
+section{
+    .container-text{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        .grid-text3{
+            grid-column: span 2;
+        }
+    }
+}
+main{
+    .div-font{
+        font-size: 20px;
+    }
+}
+}
+
+
+/* estilo de desktop */
+
+@media screen and (min-width: 1024px) {
+section{
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        .grid-img3{
+            grid-column: span 1;
+        } 
+    }
+}
+section{
+    .container-padre{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }  
+}
+section{
+    .container-text{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        .grid-text3{
+            grid-column: span 1;
+        }
+    }
+}
+main{
+    .div-font{
+        font-size: 30px;
+    }
+}
+}
