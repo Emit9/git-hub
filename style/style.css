@@ -16,7 +16,8 @@
   justify-content: space-between;
 }
 .header-index img {
-  width: 16%;
+  width: 50%;
+  object-fit: cover;
 }
 
 /* main de index */
@@ -37,6 +38,7 @@ main p {
 /* section de index */
 section .ver-mas-index {
   text-align: center;
+  margin-bottom: 5%;
 }
 section .grid-container {
   object-fit: cover;
@@ -45,12 +47,25 @@ section .grid-container {
   grid-template-rows: repeat(3 1fr);
   grid-template-columns: 1fr;
   align-content: center;
+  margin: 5%;
 }
 section .grid-img {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5px solid black;
+}
+section .grid-img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5px solid black;
 }
 section .grid-img3 {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5px solid black;
 }
 
 /* footer */
@@ -58,11 +73,14 @@ footer {
   border-top: 0.01px solid black;
 }
 footer img {
-  width: 7vh;
+  width: 30%;
+  object-fit: cover;
+  margin: 5% 0% 0% 5%;
 }
 footer nav {
   text-align: right;
   list-style-type: none;
+  margin-right: 5%;
 }
 footer p {
   text-align: center;
@@ -70,24 +88,23 @@ footer p {
 }
 
 /* porfolio */
-header .header-porfolio {
-  display: flex;
-  align-items: center;
-  position: static;
-  width: 100%;
-  background-color: white;
-  justify-content: space-between;
-}
-header .header-porfolio img {
-  width: 16%;
-}
-
 main .h1-porfolio {
   margin-top: 0%;
 }
 main h2 {
   text-align: center;
   margin: 5%;
+}
+main .container-porfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 25%);
+  gap: 5%;
+}
+main .container-porfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* servicios */
