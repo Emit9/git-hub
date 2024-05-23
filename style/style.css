@@ -5,6 +5,24 @@
   box-sizing: border-box;
 }
 
+/* color del body */
+body {
+  background-color: #F8FAFA;
+}
+
+/* tipografia de textos */
+h1 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: "Radio Canada Big", sans-serif;
+}
+
+p, a {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* estilo mobile */
 /* menu de navegacion */
 .header-index {
@@ -16,7 +34,7 @@
   justify-content: space-between;
 }
 .header-index img {
-  width: 50%;
+  width: 40%;
   object-fit: cover;
 }
 
@@ -73,7 +91,7 @@ footer {
   border-top: 0.01px solid black;
 }
 footer img {
-  width: 30%;
+  width: 25%;
   object-fit: cover;
   margin: 5% 0% 0% 5%;
 }
@@ -99,12 +117,13 @@ main .container-porfolio {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 25%);
-  gap: 5%;
+  gap: 10%;
 }
 main .container-porfolio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 0.5px solid black;
 }
 
 /* servicios */
@@ -166,6 +185,9 @@ main .img-sobre-mi {
   margin-left: 15%;
 }
 
+section .container-padre {
+  gap: 3%;
+}
 section .container-text {
   display: grid;
   gap: 3%;
@@ -175,11 +197,14 @@ section .container-text {
 }
 section nav .sobre-mi {
   text-align: center;
-  background-color: rgb(106, 231, 231);
-  padding: 15%;
+  background-color: #004AAD;
+  padding: 10%;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
+}
+section nav .sobre-mi a {
+  color: #F8FAFA;
 }
 
 /* Contacto */
@@ -214,6 +239,19 @@ main .bt-contacto {
   main .div-font {
     font-size: 20px;
   }
+  main .container-porfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 50%;
+  }
+  main .container-porfolio .recicla3 {
+    grid-column: span 2;
+  }
+  main .container-porfolio .rook3 {
+    grid-column: span 2;
+  }
+  main .container-porfolio .surfers3 {
+    grid-column: span 2;
+  }
 }
 /* estilo de desktop */
 @media screen and (min-width: 1024px) {
@@ -238,6 +276,19 @@ main .bt-contacto {
   }
   main .div-font {
     font-size: 30px;
+  }
+  main .container-porfolio {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  main .container-porfolio .surfers3 {
+    grid-column: span 1;
+  }
+  main .container-porfolio .rook3 {
+    grid-column: span 1;
+  }
+  main .container-porfolio .recicla3 {
+    grid-column: span 1;
   }
 }
 
