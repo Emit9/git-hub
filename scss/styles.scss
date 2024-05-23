@@ -69,10 +69,27 @@ main{
 }
 /* section de index */
 section{
+    nav{
     .ver-mas-index{
         text-align: center;
         margin-bottom: 5%;
-    }
+        button{
+            :hover{
+                color: #F8FAFA;
+                background-color: $color-secundario;
+                border-radius: 5px;
+                padding: 10px 30px;
+            }
+            background-color: #F8FAFA;
+            border-radius: 5px;
+            border: 0.5px none $color-secundario;
+            padding: 10px 10px;
+            a{
+                color: $color-secundario;
+            }
+        }
+        }
+    }    
     .grid-container{
         object-fit: cover;
         display: grid;
@@ -103,6 +120,27 @@ section{
 }
 /* footer */ 
 footer{
+    ul{
+        nav{
+            li{
+                button{
+                    :hover{
+                       color: #F8FAFA;
+                        background-color: $color-secundario;
+                        border-radius: 5px;
+                        padding: 10px 10px;
+                    }
+                        background-color: #F8FAFA;
+                        border-radius: 5px;
+                        border: 0.5px none $color-secundario;
+                        padding: 10px 10px;
+                        a{
+                            color: $color-secundario;
+                        }
+                }
+            }
+        }
+    }
     border-top: 0.01px solid black;
     img{
         width: 25%;

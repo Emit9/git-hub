@@ -69,9 +69,24 @@ main p {
 }
 
 /* section de index */
-section .ver-mas-index {
+section nav .ver-mas-index {
   text-align: center;
   margin-bottom: 5%;
+}
+section nav .ver-mas-index button {
+  background-color: #F8FAFA;
+  border-radius: 5px;
+  border: 0.5px none #004AAD;
+  padding: 10px 10px;
+}
+section nav .ver-mas-index button :hover {
+  color: #F8FAFA;
+  background-color: #004AAD;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+section nav .ver-mas-index button a {
+  color: #004AAD;
 }
 section .grid-container {
   object-fit: cover;
@@ -104,6 +119,21 @@ section .grid-img3 {
 /* footer */
 footer {
   border-top: 0.01px solid black;
+}
+footer ul nav li button {
+  background-color: #F8FAFA;
+  border-radius: 5px;
+  border: 0.5px none #004AAD;
+  padding: 10px 10px;
+}
+footer ul nav li button :hover {
+  color: #F8FAFA;
+  background-color: #004AAD;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+footer ul nav li button a {
+  color: #004AAD;
 }
 footer img {
   width: 25%;
