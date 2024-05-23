@@ -8,9 +8,23 @@
     padding: 0%;
     box-sizing: border-box;
 }
+/* bt */
+    .btn, .dropdown-menu{
+        :hover{
+            background-color: $color-secundario;
+        }
+        background-color: $color-secundario;
+        a{
+            color: #F8FAFA;
+            text-decoration: none;
+        }
+    }
 /* color del body */
     body{
         background-color: #F8FAFA;
+        a{
+        text-decoration: none;
+        }
     }
 /* tipografia de textos */
     h1{
@@ -159,15 +173,19 @@ section{
     }
     .grid-servicio1{
         text-align: center;
+        margin: 4%;
     }
     .grid-servicio2{
         text-align: center;
+        margin: 4%;
     }
     .grid-servicio3{
         text-align: center;
+        margin: 4%;
     }
     .grid-servicio4{
         text-align: center;
+        margin: 4%;
     }
 } 
 /* sobre mi */ 
@@ -177,7 +195,7 @@ main{
     }
     .list-group{
         display: inline-block;
-        margin: 5% 0% 5% 70%;
+        margin: 5% 0% 5% 0%;
     }
     .img-sobre-mi{
         width: 70%;
@@ -197,6 +215,18 @@ section{
     }
     nav{
         .sobre-mi{
+            button{
+                background-color: $color-secundario;
+                color: #F8FAFA;
+                border-radius: 5px;
+                border: 0.5px solid #F8FAFA;
+                padding: 10px 10px;
+            }
+            :hover{
+                color: $color-secundario;
+                background-color: #F8FAFA;
+            }
+            font-size: 150%;
             text-align: center;
             background-color: $color-secundario;
             padding: 10%;
@@ -247,6 +277,9 @@ section{
 main{
     .div-font{
         font-size: 20px;
+    }
+    .list-group{
+        margin: 5% 0% 5% 40%;
     }
 }
 main{
@@ -299,8 +332,9 @@ main{
     .div-font{
         font-size: 30px;
     }
-}
-main{
+    .list-group{
+        margin: 5% 0% 5% 70%;
+    }
     .container-porfolio{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr ;

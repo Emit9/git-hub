@@ -5,9 +5,24 @@
   box-sizing: border-box;
 }
 
+/* bt */
+.btn, .dropdown-menu {
+  background-color: #004AAD;
+}
+.btn :hover, .dropdown-menu :hover {
+  background-color: #004AAD;
+}
+.btn a, .dropdown-menu a {
+  color: #F8FAFA;
+  text-decoration: none;
+}
+
 /* color del body */
 body {
   background-color: #F8FAFA;
+}
+body a {
+  text-decoration: none;
 }
 
 /* tipografia de textos */
@@ -161,15 +176,19 @@ section .grid-servicio4 img {
 }
 section .grid-servicio1 {
   text-align: center;
+  margin: 4%;
 }
 section .grid-servicio2 {
   text-align: center;
+  margin: 4%;
 }
 section .grid-servicio3 {
   text-align: center;
+  margin: 4%;
 }
 section .grid-servicio4 {
   text-align: center;
+  margin: 4%;
 }
 
 /* sobre mi */
@@ -178,7 +197,7 @@ main .h1-sobre-mi {
 }
 main .list-group {
   display: inline-block;
-  margin: 5% 0% 5% 70%;
+  margin: 5% 0% 5% 0%;
 }
 main .img-sobre-mi {
   width: 70%;
@@ -196,12 +215,24 @@ section .container-text {
   margin: 7%;
 }
 section nav .sobre-mi {
+  font-size: 150%;
   text-align: center;
   background-color: #004AAD;
   padding: 10%;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
+}
+section nav .sobre-mi button {
+  background-color: #004AAD;
+  color: #F8FAFA;
+  border-radius: 5px;
+  border: 0.5px solid #F8FAFA;
+  padding: 10px 10px;
+}
+section nav .sobre-mi :hover {
+  color: #004AAD;
+  background-color: #F8FAFA;
 }
 section nav .sobre-mi a {
   color: #F8FAFA;
@@ -238,6 +269,9 @@ main .bt-contacto {
   }
   main .div-font {
     font-size: 20px;
+  }
+  main .list-group {
+    margin: 5% 0% 5% 40%;
   }
   main .container-porfolio {
     grid-template-columns: repeat(2, 1fr);
@@ -276,6 +310,9 @@ main .bt-contacto {
   }
   main .div-font {
     font-size: 30px;
+  }
+  main .list-group {
+    margin: 5% 0% 5% 70%;
   }
   main .container-porfolio {
     grid-template-columns: repeat(3, 1fr);
